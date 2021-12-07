@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS EXERCISES</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+        .jumbotron{
+            padding: 2rem 1rem;
+            margin-bottom: 2rem;
+            background-color: #e9ecef;
+            border-radius: .3rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="jumbotron">
+    <h2>Welcome to your First Exercise</h2>
+    <p> For this exercise we will be creating a weigh metric convertor</p>
+    <p>We will take in a number in pounds (lbs) and convert it to the kilogram (kg). Right now we only know wnough to do this in one way, but later on we will learn how to add logic to this sort of problem!</p>
+    <p> Steps for the Exercise: </p>
+    <ul>
+        <li>Link the HTML file to your .js file</li>
+        <li>use javascript to accept a num input in pounds (lbs)</li>
+        <li>Then in your js file convert this num to kilogram (i*0.454)</li>
+        <li>Afterwards report back in an alert what the weight is in Kg.</li>
+        <li>Then log write "Conversion Complete" to the console</li>
+    </ul><br>
+    <a href="weigh_metric_convertor.html"> Solution </a>
+
+</div>
+    <div class="jumbotron">
+    <h2>Write a while loop that prints out only the even numbers from 1 to 20</h2>
+
+    <a href="even_nums(1-20).js"> Solution </a>
+
+</div>
+    <div class="jumbotron">
+    <h2>use a For loop to print out the word "Hello World" 5 times</h2>
+
+    <a href="Hello_World_X_5.js"> Solution </a>
+
+</div>
+    <div class="jumbotron">
+    <h2>Write a for loop that prints out only the odd numbers from 1 to 25</h2>
+
+    <a href="odd_nums.js"> Solution </a>
+
+</div>
+<div class="jumbotron">
+    <h2>Your JavaScript Level One Project!</h2>
+    <p> For this project you will be creating a generic website that ask mundane questions to normal users, but you secretly are looking for a spy!.</p>
+    <p>Anyone visiting your website will be asked a series of questions, only the spy will be able to give specific answers you expect. If all questions are answered correctly, you will post a secret message in console for the Spy to read!</p>
+    <p> Here are 4 conditions you will check for the spy: </p>
+    <ul>
+        <li>The Spy has the same first letter of his/her First Name and Last Name</li>
+        <li>The Spy is between the Age of 20 and 30 (exclusive of 20 and 30)</li>
+        <li>The Spy is atleast 170 centimeters tall</li>
+        <li>The Spy has a pet name that ends with the letter "y"</li>
+    </ul>
+    <a href="spy_project.html"> Solution </a>
+
+</div>
+<div class="jumbotron">
+    <h2>Sleeping In</h2>
+    <p>Write a function called sleepIn that takes in two boolean parameters : weekday and vacation.</p>
+    <p>The parameter weekday is true if it is a weekday, and the parameter vacation is true if we are on vacation. We sleep in if it is not a weekday or we're on vacation. Return true if we sleep in. So some example input and output</p>
+    <ul>
+        <li>SleepIn(false,false) --> true</li>
+        <li>SleepIn(true,false) --> false</li>
+        <li>SleepIn(false,true) --> true</li>
+    </ul>
+    <a href="sleeping_in.html"> Solution </a>
+<!--    <script src="SLEEPING_IN.js"></script>-->
+</div>
+    <div class="jumbotron">
+    <h2>Monkey Trouble</h2>
+    <p>We have two monkeys, and the parameters a and b indicates if each is smiling. We are in trouble if they are both smiling or if neither of them is smiling. Return true if we are in trouble.</p>
+    <p>So some example input and output</p>
+        <ul>
+        <li>monkeyTrouble(false,false) --> true</li>
+        <li>monkeyTrouble(true,true) --> true</li>
+        <li>monkeyTrouble(true,false) --> false</li>
+    </ul>
+    <a href="Monkey_trouble.js"> Solution </a>
+</div>
+    <div class="jumbotron">
+    <h2>String Times</h2>
+    <p>Given a string and a non-negative int n, return a larger string that is n copies of the original string.</p>
+    <p>So some example input and output</p>
+
+    <ul>
+        <li>stringTimes("Hi",2) --> "HiHi"</li>
+        <li>stringTimes("Hi",3) --> "HiHiHi"</li>
+        <li>stringTimes("Hi",1) --> "Hi"</li>
+    </ul>
+    <a href="string_times.js"> Solution </a>
+</div>
+    <div class="jumbotron">
+    <h2>Lucky Sum</h2>
+    <p>Given 3 numerical values a,b,c return their sum. However, if one of the value is 13 then it does not count towards the sum and values to its right do not count.</p>
+    <p>So some example input and output</p>
+
+    <ul>
+        <li>luckySum(1,2,3) --> 6</li>
+        <li>luckySum(1,2,13) --> 3</li>
+        <li>luckySum(1,13,3) --> 1</li>
+    </ul>
+    <a href="lucky_sum.js"> Solution </a>
+</div>
+    <div class="jumbotron">
+    <h2>Caught Speeding</h2>
+    <p>You are driving a little too fast, and a police officer stops you. WAP to compute result, encoded as an int value: 0=no ticket, 1=small ticket, 2=big ticket. If speed is 60 or less, the result is 0, if speed is between 61 and 80 inclusive, the result is 1. If speed is 81 or more, the result is 2. Unless its your birthdaty--- on that day your speed can be 5 higher in all calls.</p>
+    <p>So some example input and output</p>
+
+    <ul>
+        <li>caughtSpeeding(60,false) --> 0</li>
+        <li>caughtSpeeding(65,false) --> 1</li>
+        <li>caughtSpeeding(65,true) --> 0</li>
+    </ul>
+    <a href="caught_speeding.js"> Solution </a>
+</div>
+    <div class="jumbotron">
+    <h2>Bonus Problem</h2>
+    <p>We want to make a row of bricks that is goal (g) inches long. we have a num of small bricks (s) (1 inch each) and big bricks (b) (5 inches each). return true if it is possible to make the goal by choosing from the given bricks.</p>
+    <p>So some example input and output</p>
+
+    <ul>
+        <li>makeBricks(s,b,g)</li>
+        <li>makeBricks(3,1,8) --> true</li>
+        <li>makeBricks(3,1,9) --> false</li>
+        <li>makeBricks(3,2,10) --> true</li>
+    </ul>
+    <a href="bonus_prob.js"> Solution </a>
+</div>
+</div>
+</div>
